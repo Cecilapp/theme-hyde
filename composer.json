@@ -5,7 +5,7 @@
   "keywords": ["PHPoole", "theme", "Hyde"],
   "license": "MIT",
   "require": {
-    "narno/phpoole": "1.0.x-dev"
+    "narno/phpoole-library": "1.0.x-dev"
   },
   "extra": {
     "installer-name": "hyde"
