@@ -1,0 +1,13 @@
+{
+    "name": "narno/phpoole-theme-hyde",
+    "type": "october-theme",
+    "description": "PHPoole Hyde theme",
+    "keywords": ["PHPoole", "theme", "Hyde"],
+    "license": "MIT",
+    "require": {
+        "narno/phpoole": "1.0.x-dev"
+    },
+    "extra": {
+        "installer-name": "hyde"
+    }
+}
