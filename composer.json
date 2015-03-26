@@ -9,13 +9,11 @@
     "narno/phpoole-library": "1.0.x-dev"
   },
   "extra": {
-    "name": "hyde"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "extra": {
+    "name": "hyde",
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
