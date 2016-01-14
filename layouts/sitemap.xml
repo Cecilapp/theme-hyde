@@ -3,7 +3,6 @@
     {% for page in site.pages %}
     {% if page.id not in ['404', 'sitemap'] %}
     <url>
-        <debug>{{ page.id }}</debug>
         <loc>{{ url(page) }}</loc>
         <lastmod>{{ page.date|date('Y-m-dTH:i:sP') }}</lastmod>
         {% if page.sitemap.changefreq %}
