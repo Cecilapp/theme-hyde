@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in site.pages %}
+    {% if page.id not in ['404', 'sitemap'] %}
     <url>
+        <debug>{{ page.id }}</debug>
         <loc>{{ url(page) }}</loc>
         <lastmod>{{ page.date|date('Y-m-dTH:i:sP') }}</lastmod>
         {% if page.sitemap.changefreq %}
@@ -11,5 +13,6 @@
         <priority>{{ page.sitemap.priority }}</priority>
         {% endif %}
     </url>
+    {% endif %}
     {% endfor %}
 </urlset>
