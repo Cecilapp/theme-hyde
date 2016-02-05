@@ -9,7 +9,7 @@
 
 <div class="content container">
     <div class="posts">
-        {% for post in site.pages|bySection(page.pathname)|sortByDate %}
+        {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
         <div class="post">
             <h1 class="post-title">
                 <a href="{{ url(post) }}">
