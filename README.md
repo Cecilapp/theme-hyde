@@ -7,5 +7,5 @@
 ## Installation
 
 ```
-$ composer require narno/phpoole-theme-hyde:1.1.X-dev
+$ composer require narno/phpoole-theme-hyde
 ```
