@@ -5,14 +5,16 @@
   "keywords": ["PHPoole", "theme", "Hyde"],
   "license": "MIT",
   "require": {
-    "narno/phpoole-installer": "^1.1",
-    "narno/phpoole-library": "^1.1"
+    "narno/phpoole-installer": "^1.1"
   },
   "extra": {
     "name": "hyde",
     "branch-alias": {
       "dev-master": "1.1.x-dev"
     }
+  },
+  "suggest": {
+    "narno/phpoole-library": "^1.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
