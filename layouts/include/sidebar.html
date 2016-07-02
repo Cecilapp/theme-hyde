@@ -10,7 +10,7 @@
         <nav class="sidebar-nav">
 
             {% for menu in site.menus.main|sortByWeight %}
-            <a class="sidebar-nav-item{% if page.pathname == menu.url %} active{% endif %}" href="{{ site.baseurl }}{{ menu.url }}">{{ menu.name }}</a>
+            <a class="sidebar-nav-item{% if page.pathname == menu.url %} active{% endif %}" href="{{ url(menu.url) }}">{{ menu.name }}</a>
             {% endfor %}
 
         </nav>
