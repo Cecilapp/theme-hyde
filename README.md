@@ -2,7 +2,7 @@
 
 [PHPoole](http://phpoole.org) theme based on [Hyde](https://github.com/poole/hyde) (Jekyll theme).
 
-![Demo screenshot](/PHPoole-theme-hyde-screenshot.png)
+![Demo screenshot](docs/PHPoole-theme-hyde-screenshot.png)
 
 ## Installation
 
