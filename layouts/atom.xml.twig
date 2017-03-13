@@ -6,7 +6,8 @@
 	<link href="{{ site.baseurl }}" />
 	<id>{{ site.baseurl }}</id>
 	<updated>{{ page.date|date('Y-m-dTH:i:sP') }}</updated>
-{% for page in site.pages|filterBy('section', 'blog') %}
+{% for page in site.pages|filterBy('section', 'blog')|sortByDate %}
+{% if page.id != 'blog/index' %}
 	<entry>
 		<title>{{ page.title }}</title>
 		<link href="{{ url(page) }}" />
@@ -19,5 +20,6 @@
 			</div>
 		</content>
 	</entry>
+{% endif %}
 {% endfor %}
 </feed>
