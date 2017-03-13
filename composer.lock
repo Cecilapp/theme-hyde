@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3cafdb0f0a0935c1388dba77e412eb75",
-    "content-hash": "29248a6c8861455b9248dd862d1425e5",
+    "content-hash": "525ea38269eaed97aa96739e0df8f1b5",
     "packages": [
         {
             "name": "narno/phpoole-installer",
@@ -55,14 +54,14 @@
                 "plugins",
                 "themes"
             ],
-            "time": "2016-06-12 20:01:02"
+            "time": "2016-06-12T20:01:02+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
