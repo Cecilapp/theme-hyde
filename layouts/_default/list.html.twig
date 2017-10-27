@@ -11,7 +11,7 @@
             <a href="{{ url(post) }}">{{ post.title|e }}</a>
           </h1>
           <span class="post-date">{{ post.date|date("j M Y") }}</span>
-          {{ post.content|excerpt }}
+          {{ post.content|excerptHtml }}
         </div>
 {% endfor %}
       </div>
