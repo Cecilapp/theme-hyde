@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 {% include 'include/head.html.twig' %}
-<body>
+  <body>
 {% include 'include/sidebar.html.twig' %}
-<div class="content container">
-    <div class="posts">
-{% if not site.paginate.disabled %}
-{% for post in page.pagination.pages %}
+    <div class="content container">
+      <div class="posts">
+{% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 1) %}
         <div class="post">
-            <h1 class="post-title">
-                <a href="{{ url(post) }}">{{ post.title }}</a>
-            </h1>
-            <span class="post-date">{{ post.date|date("j M Y") }}</span>
-{{ post.content|excerpt }}
+          <h1 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h1>
+          <span class="post-date">{{ post.date|date("j M Y") }}</span>
+          {{ post.content|excerpt }}
+          <footer class="readmore">
+            <a href="{{ url(post) }}#more">Lire la suite ›</a>
+          </footer>
         </div>
 {% endfor %}
-{% else %}
-{% for post in site.pages|filterBy('section', 'blog')|sortByDate %}
-{% if post.id != 'blog/index' %}
-        <div class="post">
-            <h1 class="post-title">
-                <a href="{{ url(post) }}">{{ post.title }}</a>
-            </h1>
-            <span class="post-date">{{ post.date|date("j M Y") }}</span>
-{{ post.content|excerpt }}
-        </div>
-{% endif %}
+      </div>
+      <div class="lastposts">
+        <h2>Recent posts</h2>
+        <ul>
+{% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 5) %}
+          <li><a href="{{ url(post) }}">{{ post.title }}</a></li>
 {% endfor %}
-{% endif %}
+        </ul>
+      </div>
     </div>
-{% if not site.paginate.disabled %}
-    <div class="pagination">
-{% if page.pagination.prev is defined %}
-        <a class="pagination-item newer" href="{{ url(page.pagination.prev) }}">Newer</a>
-{% else %}
-        <span class="pagination-item newer">Newer</span>
-{% endif %}
-{% if page.pagination.next is defined %}
-        <a class="pagination-item older" href="{{ url(page.pagination.next) }}">Older</a>
-{% else %}
-        <span class="pagination-item older">Older</span>
-{% endif %}
-    </div>
-{% endif %}
-</div>
-</body>
+  </body>
 </html>
