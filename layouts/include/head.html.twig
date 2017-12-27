@@ -25,4 +25,17 @@
     <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/monokai_sublime.css">
     <script src="https://highlightjs.org/static/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/{{ site.netlify.identity.version|default('v1') }}/netlify-identity-widget.js"></script>
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/{{ site.netlify.cms.path|default('admin') }}/";
+          });
+        }
+      });
+    }
+    </script>
   </head>
