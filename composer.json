@@ -8,6 +8,11 @@
     "narno/phpoole-installer": "^1.1"
   },
   "extra": {
-    "name": "hyde"
-  }
+    "name": "hyde",
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
