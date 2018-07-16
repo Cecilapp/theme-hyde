@@ -8,15 +8,15 @@
 
 ### Through Composer
 
-```
-$ composer require phpoole/theme-hyde
+```bash
+composer require phpoole/theme-hyde
 ```
 
 ### Manually
 
 1. download the source code of the lastest [release](https://github.com/PHPoole/theme-hyde/releases)
 2. create a `themes/hyde` directory at the root of your projet
-3. copy downloaded code in this directory
+3. copy downloaded files in this directory
 
 ## Usage
 
