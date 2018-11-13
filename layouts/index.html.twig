@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-{% include 'include/head.html.twig' %}
-  <body>
-{% include 'include/sidebar.html.twig' %}
-    <div class="content container">
+{% extends '_default/page.html.twig' %}
+
+{% block content %}
       <div class="posts">
 {% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 1) %}
         <div class="post">
+{% block post %}
           <h1 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h1>
           <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% if post.image is defined %}
@@ -16,17 +14,9 @@
           <footer class="readmore">
             <a href="{{ url(post) }}#more">Read more ›</a>
           </footer>
+{% endblock %}
         </div>
 {% endfor %}
       </div>
-      <div class="lastposts">
-        <h2>Recent posts</h2>
-        <ul>
-{% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 5) %}
-          <li><a href="{{ url(post) }}">{{ post.title }}</a></li>
-{% endfor %}
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+{% include 'includes/lastposts.html.twig' %}
+{% endblock %}

@@ -1,5 +1,6 @@
     <div class="sidebar">
       <div class="container sidebar-sticky">
+{% block sidebar %}
         <div class="sidebar-about">
           <h1>
             <a href="{{ url('/') }}">{{ site.title }}</a>
@@ -14,5 +15,6 @@
 {% endif %}
         </nav>
         <p>Powered by <a href="{{ phpoole.url }}">PHPoole</a> &amp; <a href="http://hyde.getpoole.com">Hyde</a>.</p>
+{% endblock %}
       </div>
     </div>
