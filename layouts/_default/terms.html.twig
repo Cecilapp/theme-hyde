@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-{% include 'include/head.html.twig' %}
-  <body>
-{% include 'include/sidebar.html.twig' %}
-    <div class="content container">
+{% extends '_default/page.html.twig' %}
+
+{% block content %}
       <h1>{{ page.plural }}</h1>
       <ul>
 {% for name, term in page.terms %}
@@ -16,6 +13,4 @@
         </li>
 {% endfor %}
       </ul>
-    </div>
-  </body>
-</html>
+{% endblock %}

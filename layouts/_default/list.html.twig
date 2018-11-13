@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-{% include 'include/head.html.twig' %}
-  <body>
-{% include 'include/sidebar.html.twig' %}
-    <div class="content container">
+{% extends '_default/page.html.twig' %}
+
+{% block content %}
       <div class="posts">
 {% for post in site.pages|filterBy('section', page.pathname)|sortByDate %}
         <div class="post">
+{% block post %}
           <h1 class="post-title">
             <a href="{{ url(post) }}">{{ post.title|e }}</a>
           </h1>
           <span class="post-date">{{ post.date|date("j M Y") }}</span>
           {{ post.content|excerptHtml }}
+{% endblock %}
         </div>
 {% endfor %}
       </div>
-    </div>
-  </body>
-</html>
+{% endblock %}
