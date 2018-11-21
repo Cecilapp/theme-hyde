@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "57e61c9f8da6e8e5f6acc6fa0ad36884",
+    "packages": [
+        {
+            "name": "cecil/theme-installer",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-installer.git",
+                "reference": "bcad945ccf467351dcbf2765c99394ba33d6bf2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/bcad945ccf467351dcbf2765c99394ba33d6bf2f",
+                "reference": "bcad945ccf467351dcbf2765c99394ba33d6bf2f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PHPoole\\PHPoole\\Composer\\PHPoolePlugin",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PHPoole\\PHPoole\\Composer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Ligny",
+                    "email": "arnaud@ligny.org",
+                    "homepage": "http://narno.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Installer for PHPoole themes",
+            "keywords": [
+                "installer",
+                "phpoole",
+                "themes"
+            ],
+            "time": "2018-01-15T17:40:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
