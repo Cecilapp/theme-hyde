@@ -1,8 +1,8 @@
-<div class="lastposts">
-  <h2>Recent posts</h2>
-  <ul>
-{% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 5) %}
-    <li><a href="{{ url(post) }}">{{ post.title }}</a></li>
+      <div class="lastposts">
+        <h2>Recent posts</h2>
+        <ul>
+{% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(1, 6) %}
+          <li><a href="{{ url(post) }}">{{ post.title }}</a></li>
 {% endfor %}
-  </ul>
-</div>
+        </ul>
+      </div>

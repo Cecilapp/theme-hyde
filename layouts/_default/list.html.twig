@@ -10,8 +10,8 @@
           </h1>
           <span class="post-date">{{ post.date|date("j M Y") }}</span>
           {{ post.content|excerptHtml }}
-{% endblock %}
+{% endblock post %}
         </div>
 {% endfor %}
       </div>
-{% endblock %}
+{% endblock content %}
