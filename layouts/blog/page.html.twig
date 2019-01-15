@@ -8,7 +8,7 @@
 {% if page.image is defined %}
       <img src="{{ page.image }}" />
 {% endif %}
-{{ page.content }}
+      {{ page.content }}
       <p>
 {% if page.tags is defined %}
 {% for tag in page.tags %}
@@ -16,4 +16,4 @@
 {% endfor %}
 {% endif %}
       </p>
-{% endblock %}
+{% endblock content %}
