@@ -20,7 +20,7 @@ composer require cecil/theme-hyde
 
 ## Usage
 
-Add the following line in your `config.yml` configuration file:
+Add the following line in your `config.yml` file:
 
 ```yaml
 theme: hyde
