@@ -14,8 +14,8 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ url('rss.xml') }}">
     <!-- Highlight JS -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/highlightjs/highlight.js/master/src/styles/monokai-sublime.css">
-    <script src="https://highlightjs.org/static/highlight.pack.js"></script>
+    <link rel="stylesheet" href="{{ url(minify('css/monokai-sublime.css')) }}">
+    <script src="{{ url('js/highlight-9.13.1.min.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 {% include 'includes/head.include.html.twig' %}
 {% endblock head %}
