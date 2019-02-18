@@ -1,8 +1,13 @@
+{% set pages = site.pages|filterBy('section', page.path)|sortByDate %}
+{% if page.pagination is defined %}
+{% set pages = page.pagination.pages %}
+{% endif %}
+
 {% extends '_default/page.html.twig' %}
 
 {% block content %}
       <div class="posts">
-{% for post in site.pages|filterBy('section', page.pathname)|sortByDate %}
+{% for post in pages %}
         <div class="post">
 {% block post %}
           <h1 class="post-title">
@@ -14,4 +19,5 @@
         </div>
 {% endfor %}
       </div>
+{% include 'includes/pagination.html.twig' %}
 {% endblock content %}

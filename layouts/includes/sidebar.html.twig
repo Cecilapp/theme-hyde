@@ -3,14 +3,14 @@
 {% block sidebar %}
         <div class="sidebar-about">
           <h1>
-            <a href="{{ url('/') }}">{{ site.title }}</a>
+            <a href="{{ url() }}">{{ site.title }}</a>
           </h1>
           <p class="lead">{{ site.description }}</p>
         </div>
         <nav class="sidebar-nav">
 {% if site.menus.main is defined %}
 {% for menu in site.menus.main|sortByWeight %}
-          <a class="sidebar-nav-item{% if page.pathname == menu.url %} active{% endif %}" href="{{ url(menu.url) }}">{{ menu.name }}</a>
+          <a class="sidebar-nav-item{% if url(page) == url(menu.url) %} active{% endif %}" href="{{ url(menu.url) }}">{{ menu.name }}</a>
 {% endfor %}
 {% endif %}
         </nav>
