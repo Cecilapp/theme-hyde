@@ -1,4 +1,4 @@
-{% extends '_default/page.html.twig' %}
+{% extends 'page.html.twig' %}
 
 {% block title %}{{ site.title }} &middot; {{ site.baseline }}{% endblock title %}
 
@@ -20,5 +20,5 @@
         </div>
 {% endfor %}
       </div>
-{% include 'includes/lastposts.html.twig' %}
+{% include 'partials/lastposts.html.twig' %}
 {% endblock content %}
