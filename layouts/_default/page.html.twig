@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="{{ url(minify('css/style.css')) }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 {% endblock head_css %}
-{% for alternate in page.alternates %}
-    <link rel="{{ alternate.rel }}" type="{{ alternate.type }}" title="{{ alternate.title }}" href="{{ url(page, {format: alternate.format, canonical: true}) }}">
-{% endfor %}
+{% include 'partials/alternates.html.twig' %}
     <link rel="stylesheet" href="{{ url(minify('css/monokai-sublime.css')) }}">
     <script src="{{ url('js/highlight-9.13.1.min.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
