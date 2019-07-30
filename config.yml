@@ -1,4 +1,3 @@
-site:
-  pagination:
-    max: 5
-    path: 'page'
+pagination:
+  max: 5
+  path: 'page'
