@@ -10,7 +10,7 @@
           <h1 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h1>
           <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% if post.image is defined %}
-          <img src="{{ post.image }}" />
+          <img src="{{ url(post.image) }}" />
 {% endif %}
           {{ post.content|excerptHtml }}
           <footer class="readmore">
