@@ -1,27 +1,22 @@
 # Hyde theme
 
-[Poole](http://getpoole.com)/[Hyde](https://github.com/poole/hyde) theme for [Cecil](https://cecil.app).
+[Poole](https://getpoole.com)/[Hyde](https://github.com/poole/hyde) theme for [Cecil](https://cecil.app).
 
 ![Demo screenshot](docs/Cecil-theme-hyde-screenshot.png)
 
 ## Installation
 
-### Through Composer
-
 ```bash
 composer require cecil/theme-hyde
 ```
 
-### Manually
-
-1. download the source code of the lastest [release](https://github.com/Cecilapp/theme-hyde/releases)
-2. create a `themes/hyde` directory at the root of your projet
-3. copy downloaded files in this directory
+> Or [download the latest archive](https://github.com/Cecilapp/theme-hyde/releases/latest/) and uncompress its content in `themes/hyde`.
 
 ## Usage
 
-Add the following line in your `config.yml` file:
+Add `hyde` in the `themes` section of your `config.yml`:
 
 ```yaml
-theme: hyde
+theme:
+  - hyde
 ```
