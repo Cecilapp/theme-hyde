@@ -19,9 +19,28 @@
     <script>hljs.initHighlightingOnLoad();</script>
 {% endblock head %}
   </head>
-  <body>
+{% set themes = {
+  'red':     'theme-base-08',
+  'orange':  'theme-base-09',
+  'yellow':  'theme-base-0a',
+  'green':   'theme-base-0b',
+  'cyan':    'theme-base-0c',
+  'blue':    'theme-base-0d',
+  'magenta': 'theme-base-0e',
+  'brown':   'theme-base-0f',
+  'cecil':   'theme-cecil'
+} %}
+{% set class = [] %}
+{% if site.hyde.theme %}
+{% set class = class|merge([themes[site.hyde.theme]]) %}
+{% endif %}
+{% if site.hyde.reverse %}
+{% set class = class|merge(['layout-reverse']) %}
+{% endif %}
+{% set class = class|join(' ') %}
+  <body class="{{ class }}">
     <div class="sidebar">
-      <div class="container sidebar-sticky">
+      <div class="container {% if site.hyde.sidebar.sticky %} sidebar-sticky{% endif %}">
 {% block sidebar %}
         <div class="sidebar-about">
           <h1>

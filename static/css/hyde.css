@@ -248,3 +248,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Cecil from https://cecil.app */
+.theme-cecil .sidebar {
+  background-color: #163C56;
+}
+.theme-cecil .content a,
+.theme-cecil .related-posts li a:hover {
+  color: #163C56;
+}
