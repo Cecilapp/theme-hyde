@@ -2,14 +2,10 @@
   "name": "cecil/theme-hyde",
   "type": "cecil-theme",
   "description": "Cecil Hyde theme",
-  "keywords": [
-    "Cecil",
-    "theme",
-    "Hyde"
-  ],
+  "keywords": ["Cecil", "theme", "Hyde"],
   "license": "MIT",
   "require": {
-    "cecil/theme-installer": "^1.3"
+    "cecil/theme-installer": "^1.4"
   },
   "extra": {
     "name": "hyde",
