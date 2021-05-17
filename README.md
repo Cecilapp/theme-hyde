@@ -30,3 +30,9 @@ hyde:
   theme: '' # red, orange, yellow, green, cyan, blue, magenta, brown or cecil
   reverse: false # Reverse layout
 ```
+
+## License
+
+ _Hyde_ is a free software distributed under the terms of the MIT license.
+
+© [Arnaud Ligny](https://arnaudligny.fr)
