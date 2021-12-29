@@ -38,6 +38,7 @@ jobs:
 
     - name: Add content
       run: |
+        mkdir -p demo/content/blog/
         echo -e "---\ntitle: Post 1\n---\nLorem ipsum" > demo/content/blog/post-1.md
         echo -e "---\ntitle: Post 2\n---\nLorem ipsum" > demo/content/blog/post-2.md
         rm demo/content/another-page.md
