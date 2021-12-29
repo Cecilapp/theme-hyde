@@ -26,10 +26,21 @@ jobs:
       with:
         path: demo/themes/hyde
 
+    - name: Set config
+      run: |
+        echo -e "title: Cecil" > demo/config.yml
+        echo -e "baseline: Your content driven static site generator." >> demo/config.yml
+
     - name: Add theme
       run: |
         echo -e "theme:\n  - hyde" >> demo/config.yml
         rm -rf demo/layouts
+
+    - name: Add content
+      run: |
+        echo -e "---\ntitle: Post 1\n---\nLorem ipsum" > demo/content/blog/post-1.md
+        echo -e "---\ntitle: Post 2\n---\nLorem ipsum" > demo/content/blog/post-2.md
+        rm demo/content/another-page.md
 
     - name: Build
       run: php cecil.phar build -vv demo
