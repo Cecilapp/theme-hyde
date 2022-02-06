@@ -3,15 +3,15 @@
 {% block content %}
 {{ parent() }}
 <ul>
-  {% for term in page.terms %}
+  {%- for term in page.terms ~%}
   <li>
     <h2><a href="{{ url(page.path ~ '/' ~ term.id) }}">{{ term.name }}</a> ({{ term|length }})</h2>
     <ul>
-      {% for page in term %}
+      {%- for page in term ~%}
       <li><a href="{{ url(page) }}">{{ page.title }}</a></li>
-      {% endfor %}
+      {%- endfor ~%}
     </ul>
   </li>
-  {% endfor %}
+  {%- endfor ~%}
 </ul>
 {% endblock content %}

@@ -10,17 +10,17 @@
 
 {% block content %}
       <div class="posts">
-{% for post in pages %}
+        {%- for post in pages ~%}
         <div class="post">
-{% block post %}
+          {%- block post ~%}
           <h1 class="post-title">
             <a href="{{ url(post) }}">{{ post.title|e }}</a>
           </h1>
-          <span class="post-date">{{ post.date|date("j M Y") }}</span>
+          <span class="post-date">{{ post.date|date('j M Y') }}</span>
           {{ post.content|excerpt_html }}
-{% endblock post %}
+          {%- endblock post ~%}
         </div>
-{% endfor %}
+        {%- endfor ~%}
       </div>
-{% include 'partials/pagination.html.twig' %}
+      {%- include 'partials/pagination.html.twig' ~%}
 {% endblock content %}
