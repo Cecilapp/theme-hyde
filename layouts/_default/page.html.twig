@@ -7,14 +7,14 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     {%~ include 'partials/metatags.html.twig' ~%}
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('apple-touch-icon-144-precomposed.png') }}">
-    <link rel="shortcut icon" href="{{ url('favicon.ico') }}">
 {% block head_css %}
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('apple-touch-icon-144-precomposed.png')|url }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset(['css/poole.css','css/syntax.css','css/hyde.css'])|minify|url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 {% endblock head_css %}
-    <link rel="stylesheet" href="{{ asset('css/monokai-sublime.css')|url }}">
-    <script src="{{ asset('js/highlight-9.13.1.min.js')|url }}"></script>
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai-sublime.min.css', {minify: false})|url }}">
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js', {minify: false})|url }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 {% endblock head %}
   </head>

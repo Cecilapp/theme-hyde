@@ -6,8 +6,8 @@
       <span class="post-date">{{ page.date|date("j M Y") }}</span>
 {% endif %}
 {% if page.image is defined %}
-      <img src="{{ url(page.image) }}" />
 {% endif %}
+      <img src="{{ asset(page.image)|url }}" />
       {{ page.content }}
       <p>
 {% if page.tags is defined %}
