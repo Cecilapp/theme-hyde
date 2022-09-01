@@ -1,6 +1,6 @@
 # Hyde theme
 
-> The _Hyde_ theme for [Cecil](https://cecil.app) is a port of the [Hyde](https://github.com/poole/hyde) theme for Jekyll created by [Mark Otto](https://github.com/mdo).
+The _Hyde_ theme for [Cecil](https://cecil.app) is a port of the [Hyde](https://github.com/poole/hyde) theme for Jekyll created by [Mark Otto](https://github.com/mdo).
 
 ![Demo screenshot](docs/screenshot.png)
 
