@@ -3,10 +3,10 @@
 {% block content %}
       <h1 class="page-title">{{ page.title }}</h1>
       {%- if page.date is defined ~%}
-      <span class="post-date">{{ page.date|date("j M Y") }}</span>
+      <span class="post-date">{{ page.date|format_date('long') }}</span>
       {%- endif ~%}
       {%- if page.image is defined ~%}
-      <img src="{{ asset(page.image)|url }}" />
+      {{ asset(page.image)|html({alt: page.title}) }}
       {%- endif ~%}
       {{ page.content }}
       <p>

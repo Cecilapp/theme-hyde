@@ -16,7 +16,7 @@
           <h1 class="post-title">
             <a href="{{ url(post) }}">{{ post.title|e }}</a>
           </h1>
-          <span class="post-date">{{ post.date|date('j M Y') }}</span>
+          <span class="post-date">{{ post.date|format_date('long') }}</span>
           {{ post.content|excerpt_html }}
           {%- endblock post ~%}
         </div>
