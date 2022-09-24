@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-09-08 16:28+0200\n"
-"PO-Revision-Date: 2022-09-08 17:33+0200\n"
+"POT-Creation-Date: 2022-09-24 02:19+0200\n"
+"PO-Revision-Date: 2022-09-24 02:19+0200\n"
 "Last-Translator: Arnaud Ligny <arnaud@ligny.org>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,24 +14,22 @@ msgstr ""
 "X-Poedit-Basepath: ../layouts\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: themes/hyde/layouts/_default/page.html.twig:60
+#: _default/page.html.twig:60
 msgid "Powered by %powered_by%."
 msgstr "Propulsé par %powered_by%."
 
-#: themes/hyde/layouts/index.html.twig:17
+#: index.html.twig:17
 msgid "Read more"
 msgstr "Lire la suite"
 
-#: themes/hyde/layouts/partials/lastposts.html.twig:2
+#: partials/lastposts.html.twig:2
 msgid "Recent posts"
 msgstr "Articles récents"
 
-#: themes/hyde/layouts/partials/pagination.html.twig:5
-#: themes/hyde/layouts/partials/pagination.html.twig:7
+#: partials/pagination.html.twig:5 partials/pagination.html.twig:7
 msgid "Older"
 msgstr "Plus ancien"
 
-#: themes/hyde/layouts/partials/pagination.html.twig:10
-#: themes/hyde/layouts/partials/pagination.html.twig:12
+#: partials/pagination.html.twig:10 partials/pagination.html.twig:12
 msgid "Newer"
 msgstr "Plus récent"
