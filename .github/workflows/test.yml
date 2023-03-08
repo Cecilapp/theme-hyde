@@ -9,7 +9,7 @@ jobs:
     env:
       CECIL_BASEURL: https://cecilapp.github.io/theme-hyde/
       CECIL_CANONICALURL: true
-    environment: 
+    environment:
       name: github-pages
       url: ${{ steps.deploy_url.outputs.url }}
     steps:
