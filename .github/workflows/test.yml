@@ -41,7 +41,7 @@ jobs:
         mkdir -p demo/pages/blog/
         echo -e "---\ntitle: Post 1\n---\nLorem ipsum" > demo/pages/blog/post-1.md
         echo -e "---\ntitle: Post 2\n---\nLorem ipsum" > demo/pages/blog/post-2.md
-        rm demo/pages/another-page.md
+        #rm demo/pages/another-page.md
 
     - name: Build
       run: php cecil.phar build -vv demo
