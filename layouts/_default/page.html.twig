@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
       {%- block head_css ~%}
     <link rel="stylesheet" href="{{ asset(['css/poole.css','css/syntax.css','css/hyde.css'])|minify|url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    {%~ include 'partials/fonts.html.twig' only ~%}
       {%- endblock head_css ~%}
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai-sublime.min.css', {minify: false})|url }}">
     {%- endblock head ~%}
