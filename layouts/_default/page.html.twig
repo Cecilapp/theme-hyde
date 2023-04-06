@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset(['css/poole.css','css/syntax.css','css/hyde.css'])|minify|url }}" />
     {%~ include 'partials/fonts.html.twig' only ~%}
       {%- endblock head_css ~%}
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai-sublime.min.css', {minify: false})|url }}">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.libs.highlight.version ~ '/styles/' ~ site.libs.highlight.style ~ '.min.css', {minify: false})|url }}" />
     {%- endblock head ~%}
   </head>
   {%- set themes = {

@@ -8,3 +8,7 @@ hyde:
 pagination:
   max: 5
   path: 'page'
+libs:
+  highlight:
+    version: '11.4.0'
+    style: 'monokai-sublime'
