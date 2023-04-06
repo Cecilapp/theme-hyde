@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ site.language }}" lang="{{ site.language }}">
   <head>
     {%- block head ~%}
-    <link href="https://gmpg.org/xfn/11" rel="profile">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link href="https://gmpg.org/xfn/11" rel="profile" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     {%~ include 'partials/metatags.html.twig' ~%}
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('apple-touch-icon-144-precomposed.png')|url }}">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('apple-touch-icon-144-precomposed.png')|url }}" />
+    <link rel="shortcut icon" href="{{ url('favicon.ico') }}" />
       {%- block head_css ~%}
-    <link rel="stylesheet" href="{{ asset(['css/poole.css','css/syntax.css','css/hyde.css'])|minify|url }}">
+    <link rel="stylesheet" href="{{ asset(['css/poole.css','css/syntax.css','css/hyde.css'])|minify|url }}" />
     {%~ include 'partials/fonts.html.twig' only ~%}
       {%- endblock head_css ~%}
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai-sublime.min.css', {minify: false})|url }}">

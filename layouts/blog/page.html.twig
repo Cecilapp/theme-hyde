@@ -5,9 +5,6 @@
       {%- if page.date is defined ~%}
       <span class="post-date">{{ page.date|format_date('long') }}</span>
       {%- endif ~%}
-      {%- if page.image is defined ~%}
-      {{ asset(page.image)|html({alt: page.title}) }}
-      {%- endif ~%}
       {{ page.content }}
       <p>
       {%- if page.tags is defined ~%}
