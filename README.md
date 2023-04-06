@@ -26,10 +26,10 @@ Configuration:
 ```yaml
 hyde:
   sidebar:
-    sticky: true # Content to the bottom of the sidebar
-  theme: ''      # red, orange, yellow, green, cyan, blue, magenta, brown or cecil
-  reverse: false # Reverse layout
-  fonts: google  # google or local
+    sticky: true  # Content to the bottom of the sidebar
+  theme: ''       # red, orange, yellow, green, cyan, blue, magenta, brown or cecil
+  reverse: false  # Reverse layout
+  fonts: 'google' # google or local
 ```
 
 ### Internationalization
