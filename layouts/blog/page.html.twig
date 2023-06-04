@@ -9,7 +9,7 @@
       <p>
       {%- if page.tags is defined ~%}
         {%- for tag in page.tags ~%}
-        <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
+        <a href="{{ url('tags/' ~ tag, {language: site.language}) }}">#{{ tag }}</a>&nbsp;
         {%- endfor ~%}
       {%- endif ~%}
       </p>
