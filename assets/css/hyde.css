@@ -257,3 +257,21 @@ a.sidebar-nav-item:focus {
 .theme-cecil .related-posts li a:hover {
   color: #163C56;
 }
+
+
+
+/*
+ * Fix
+ */
+
+/* Home > title (~h1) */
+.sidebar-about .title {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 3.25rem;
+  font-family: "Abril Fatface", serif;
+  text-rendering: optimizeLegibility;
+}

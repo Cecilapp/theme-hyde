@@ -13,9 +13,9 @@
         {%- for post in pages ~%}
         <div class="post">
           {%- block post ~%}
-          <h1 class="post-title">
+          <h2 class="post-title">
             <a href="{{ url(post) }}">{{ post.title|e }}</a>
-          </h1>
+          </h2>
           <span class="post-date">{{ post.date|format_date('long') }}</span>
           {{ post.content|excerpt_html }}
           <footer class="readmore">
