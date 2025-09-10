@@ -1,7 +1,5 @@
 {% extends ['page.html.twig', '_default/page.html.twig'] %}
 
-{% block title %}{{ site.title }} &middot; {{ site.baseline }}{% endblock title %}
-
 {% block content %}
       <div class="posts">
         {%- for post in site.pages.showable|filter_by('section', 'blog')|sort_by_date|slice(0, 1) ~%}
@@ -20,5 +18,5 @@
         </div>
         {%- endfor ~%}
       </div>
-      {%~ include 'partials/lastposts.html.twig' ~%}
+      {{- include('partials/lastposts.html.twig') ~}}
 {% endblock content %}
