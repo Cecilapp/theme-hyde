@@ -1,5 +1,8 @@
 name: Test and build demo
 
+env:
+  PHP_VERSION: 8.3
+
 on:
   push:
     branches: [master]
@@ -21,6 +24,12 @@ jobs:
       CECIL_BASEURL: https://cecilapp.github.io/theme-hyde/
       CECIL_CANONICALURL: true
     steps:
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          extensions: :psr, mbstring, intl, gettext, fileinfo, gd, :redis, :relay
+          coverage: none
       - name: Download Cecil
         run: |
           curl -sSOL https://cecil.app/cecil.phar
