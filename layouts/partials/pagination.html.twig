@@ -1,4 +1,4 @@
-{% if page.pagination %}
+{%- if page.pagination %}
   {%- set pagination = page.pagination ~%}
       <div class="pagination">
   {%- if pagination.links.next is defined ~%}
@@ -12,4 +12,4 @@
         <span class="pagination-item newer">{% trans %}Newer{% endtrans %}</span>
   {%- endif ~%}
       </div>
-{% endif %}
+{%- endif -%}

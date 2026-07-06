@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ url(asset(['css/poole.css','css/syntax.css','css/hyde.css'])) }}">
     {{- include('partials/fonts.html.twig') ~}}
       {%- endblock head_css ~%}
-    <link rel="stylesheet" href="{{ url(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.libs.highlight.version ~ '/styles/' ~ site.libs.highlight.style ~ '.min.css', {minify: false})) }}" />
+    <link rel="stylesheet" href="{{ url(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.libs.highlight.version ~ '/styles/' ~ site.libs.highlight.style ~ '.min.css', {minify: false})) }}">
     {%- endblock head ~%}
   </head>
   {%- set themes = {
@@ -35,19 +35,15 @@
     {%- set class = class|merge(['layout-reverse']) -%}
   {%- endif -%}
   {%- set class = class|join(' ') ~%}
-  <body class="{{ class }}">
+  <body{% if class %} class="{{ class }}"{% endif %}>
     <div class="sidebar">
       <div class="container{% if site.hyde.sidebar.sticky %} sidebar-sticky{% endif %}">
         {%- block sidebar ~%}
         <div class="sidebar-about">
           {%- if page.id == site.home ~%}
-          <h1>
-            {{ site.title }}
-          </h1>
+          <h1>{{ site.title }}</h1>
           {%- elseif page.type == 'section' or page.type == 'term' ~%}
-          <h1>
-            <a href="{{ url(site.home) }}">{{ site.title }}</a>
-          </h1>
+          <h1><a href="{{ url(site.home) }}">{{ site.title }}</a></h1>
           {%- else ~%}
           <div class="title">
             <a href="{{ url(site.home) }}">{{ site.title }}</a>
@@ -70,7 +66,7 @@
       </div>
     </div>
     <div class="content container">
-      {%~ block content ~%}
+      {%- block content ~%}
       <h1 class="page-title">{{ page.title }}</h1>
       {{ page.content }}
       {%- endblock ~%}

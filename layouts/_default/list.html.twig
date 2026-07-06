@@ -8,14 +8,12 @@
 
 {% extends ['page.html.twig', '_default/page.html.twig'] %}
 
-{% block content %}
+{% block content ~%}
       <div class="posts">
         {%- for post in pages ~%}
         <div class="post">
           {%- block post ~%}
-          <h2 class="post-title">
-            <a href="{{ url(post) }}">{{ post.title|e }}</a>
-          </h2>
+          <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title|e }}</a></h2>
           <span class="post-date">{{ post.date|format_date('long') }}</span>
           {{ post.content|excerpt_html }}
           <footer class="readmore">
@@ -25,5 +23,5 @@
         </div>
         {%- endfor ~%}
       </div>
-      {{- include('partials/pagination.html.twig') ~}}
+      {{- include('partials/pagination.html.twig') -}}
 {% endblock content %}
