@@ -33,7 +33,7 @@ hyde:
 
 ### Internationalization
 
-This theme support [localization](https://cecil.app/documentation/templates/#localization), and provides french (`fr_FR`) translation (see `translations/messages.fr_FR.po`).
+This theme support [localization](https://cecil.app/documentation/templates/#localization), and provides french translation (see `translations/messages.fr.yml`).
 
 Configuration:
 
