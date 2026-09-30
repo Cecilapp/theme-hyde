@@ -1,6 +1,6 @@
 # Hyde theme
 
-The _Hyde_ theme for [Cecil](https://cecil.app) is a port of the [Hyde theme for Jekyll](https://github.com/poole/hyde) created by [Mark Otto](https://github.com/mdo).
+_Hyde_ is a minimalist theme for Cecil, inspired by the simplicity and elegance of the original [Hyde theme for Jekyll](https://github.com/poole/hyde).
 
 ![Demo screenshot](docs/screenshot.png)
 
