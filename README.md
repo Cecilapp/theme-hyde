@@ -10,7 +10,7 @@ _Hyde_ is a minimalist theme for Cecil, inspired by the simplicity and elegance 
 composer require cecil/theme-hyde
 ```
 
-> Or [download the latest archive](https://github.com/Cecilapp/theme-hyde/releases/latest/) and uncompress its content in `themes/hyde`.
+> Or [download the latest archive](https://github.com/Cecilapp/theme-hyde/releases/latest/) and extract its contents in `themes/hyde`.
 
 ## Usage
 
@@ -26,14 +26,14 @@ Configuration:
 ```yaml
 hyde:
   sidebar:
-    sticky: true  # Content to the bottom of the sidebar
+    sticky: true  # Stick sidebar content to the bottom
   theme: ''       # red, orange, yellow, green, cyan, blue, magenta, brown or cecil
   reverse: false  # Reverse layout
 ```
 
 ### Internationalization
 
-This theme support [localization](https://cecil.app/documentation/templates/#localization), and provides french translation (see `translations/messages.fr.yml`).
+This theme supports [localization](https://cecil.app/documentation/templates/#localization), and provides a French translation (see `translations/messages.fr_FR.yml`).
 
 Configuration:
 
@@ -45,6 +45,6 @@ languages:
 
 ## License
 
- _Hyde_ is a free software distributed under the terms of the MIT license.
+_Hyde_ is free software distributed under the terms of the MIT license.
 
 © [Arnaud Ligny](https://arnaudligny.fr)
