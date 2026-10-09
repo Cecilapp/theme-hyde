@@ -2,6 +2,7 @@
 title: Présentation de Hyde
 date: 2026-09-28
 tags: [Hyde, Cecil]
+image: images/butler.jpg
 ---
 _Hyde_ est un thème audacieux en deux colonnes, qui associe une barre latérale imposante à un contenu sans fioritures. Basé sur Poole, le majordome de Jekyll, il est désormais disponible comme thème pour Cecil.
 

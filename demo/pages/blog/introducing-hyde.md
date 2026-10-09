@@ -2,6 +2,7 @@
 title: Introducing Hyde
 date: 2026-09-28
 tags: [Hyde, Cecil]
+image: images/butler.jpg
 ---
 _Hyde_ is a brazen two-column theme that pairs a prominent sidebar with uncomplicated content. It's based on Poole, the Jekyll butler, and now ships as a theme for Cecil.
 
