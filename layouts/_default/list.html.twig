@@ -1,4 +1,4 @@
-{% set pages = site.pages.all %}
+{% set pages = site.pages.showable %}
 {% if page.pages is defined %}
 {% set pages = page.pages %}
 {% endif %}
@@ -15,6 +15,9 @@
           {%- block post ~%}
           <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title|e }}</a></h2>
           <span class="post-date">{{ post.date|format_date('long') }}</span>
+          {%- if post.image is defined ~%}
+          {{ asset(post.image)|html({alt: post.title}, {responsive: true}) }}
+          {%- endif ~%}
           {{ post.content|excerpt_html }}
           <footer class="readmore">
             <a href="{{ url(post) }}#more">{% trans %}Read more{% endtrans %} ›</a>

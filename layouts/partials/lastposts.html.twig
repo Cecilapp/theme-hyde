@@ -1,9 +1,12 @@
 {#- last posts ~#}
+{%- set lastposts = site.pages.showable|filter_by('section', 'blog')|sort_by_date|slice(1, 5) -%}
+{%- if lastposts|length > 0 ~%}
       <div class="lastposts">
         <h2>{% trans %}Recent posts{% endtrans %}</h2>
         <ul>
-          {%- for post in site.pages|filter_by('section', 'blog')|sort_by_date|slice(1, 5) ~%}
-          <li><a href="{{ url(post) }}">{{ post.title }}</a></li>
+          {%- for post in lastposts ~%}
+          <li><a href="{{ url(post) }}">{{ post.title|e }}</a></li>
           {%- endfor ~%}
         </ul>
       </div>
+{%- endif -%}
