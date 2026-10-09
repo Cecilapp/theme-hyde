@@ -1,0 +1,34 @@
+title: Hyde
+description: A minimalist theme for Cecil, inspired by the original Hyde theme for Jekyll.
+baseurl: http://localhost:8000/
+theme:
+  - hyde
+hyde:
+  sidebar:
+    sticky: true
+  theme: ''       # red, orange, yellow, green, cyan, blue, magenta, brown or cecil
+  reverse: false
+language: en
+languages:
+  - code: en
+    name: English
+    locale: en_US
+  - code: fr
+    name: Français
+    locale: fr_FR
+    config:
+      description: Un thème minimaliste pour Cecil, inspiré du thème Hyde original pour Jekyll.
+      taxonomies:
+        tags: tag
+      menus:
+        main:
+          - {id: blog, name: Blog, url: /blog/, weight: 20}
+          - {id: about, name: À propos, url: /about/, weight: 30}
+          - {id: tags, name: Tags, url: /tags/, weight: 40}
+          - {id: github, name: GitHub, url: 'https://github.com/Cecilapp/theme-hyde', weight: 50}
+menus:
+  main:
+    - {id: blog, name: Blog, url: /blog/, weight: 20}
+    - {id: about, name: About, url: /about/, weight: 30}
+    - {id: tags, name: Tags, url: /tags/, weight: 40}
+    - {id: github, name: GitHub, url: 'https://github.com/Cecilapp/theme-hyde', weight: 50}
